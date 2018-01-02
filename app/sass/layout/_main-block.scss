@@ -1,0 +1,35 @@
+.main-container {
+  width: 80%;
+  height: 1000px;
+  background-color: gray;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+
+  .main-container_block {
+    height: 500px;
+    flex-grow: 5;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .user-info {
+    width: 50%;
+    height: 200px;
+    background-color: deeppink;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    flex: 1;
+  }
+  .labels {
+    flex: 2;
+    width: 50%;
+    height: 200px;
+    background-color: green;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
