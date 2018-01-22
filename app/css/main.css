@@ -1,106 +1,200 @@
-#header {
+#footer {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   height: auto;
-  overflow: auto;
-  background-color: white;
-  border-bottom: 1px solid gray;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between; }
-  #header .header_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px; }
-    #header .header_logo .header_logo_image {
-      background-color: deeppink; }
-    #header .header_logo .header_logo_text {
-      font-size: 50px;
-      color: black;
-      font-weight: bold;
-      margin: 0; }
-  #header .header_menu {
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin-right: 50px; }
-    #header .header_menu ul {
-      margin: 0;
-      padding: 0; }
-      #header .header_menu ul li {
-        display: inline-block;
-        color: black;
-        font-family: 'Lato', sans-serif;
-        text-transform: uppercase;
+  flex-direction: column;
+  align-items: center; }
+  #footer .corp {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: lightgrey; }
+  #footer .terms .privacy::after {
+    content: "|";
+    font-size: 13px;
+    margin-left: 9px;
+    margin-right: 5px; }
+  #footer ul {
+    padding: 0; }
+    #footer ul li {
+      display: inline-block; }
+      #footer ul li a {
         text-decoration: none;
-        font-weight: bold;
-        padding: 30px 30px; }
-        #header .header_menu ul li a {
-          text-decoration: none;
-          color: black; }
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        color: #0b91a0; }
 
-.main-container {
-  width: 80%;
+#main-container {
+  width: 70%;
   height: auto;
-  /*margin-top: 60px;*/
-  background-color: gray;
-  margin: 60px auto 0 auto;
+  top: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
-  .main-container .sidebar {
-    width: auto;
-    height: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+  #main-container .buttons-container {
+    margin-right: 50px;
+    width: 480px;
+    height: 340px;
     display: flex;
     flex-direction: column;
-    /*padding-left: 150px;*/
-    /*margin-left: 150px;*/ }
-    .main-container .sidebar .user-info {
-      width: auto;
-      height: 200px;
-      background-color: deeppink;
-      color: white;
-      font-size: 50px;
-      font-weight: bold; }
-    .main-container .sidebar .labels {
-      width: auto;
-      height: 200px;
-      background-color: green;
-      color: white;
-      font-size: 50px;
-      font-weight: bold; }
-  .main-container .main-container_block {
-    height: 500px;
-    width: 50%;
-    background-color: black;
-    color: white;
-    font-size: 50px;
-    font-weight: bold; }
+    flex-wrap: nowrap; }
+    #main-container .buttons-container .sale-text {
+      padding-top: 140px; }
+      #main-container .buttons-container .sale-text .corp-name {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        color: #323232;
+        margin: 0; }
+      #main-container .buttons-container .sale-text .corp-text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+        color: #323232; }
+    #main-container .buttons-container .buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #main-container .buttons-container .buttons .google_store {
+        cursor: pointer;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        background-color: black;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        color: white; }
+        #main-container .buttons-container .buttons .google_store .logo {
+          float: left;
+          padding-top: 10px;
+          padding-left: 20px; }
+        #main-container .buttons-container .buttons .google_store .logo-text {
+          margin: 0;
+          padding-top: 5px;
+          padding-right: 20px;
+          float: right;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          color: white; }
+        #main-container .buttons-container .buttons .google_store .logo-text::after {
+          content: "GOOGLE PLAY";
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: white;
+          padding-right: 15px; }
+      #main-container .buttons-container .buttons .apple_store {
+        margin-right: 25px;
+        border-width: 1px;
+        border-color: lightgrey;
+        border-style: solid;
+        cursor: pointer;
+        border-radius: 25px;
+        background-color: white;
+        width: 200px;
+        height: 50px; }
+        #main-container .buttons-container .buttons .apple_store .logo {
+          float: left;
+          padding-top: 8px;
+          padding-left: 20px; }
+        #main-container .buttons-container .buttons .apple_store .logo-text {
+          margin: 0;
+          padding-top: 5px;
+          padding-right: 20px;
+          float: right;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          color: lightgrey; }
+        #main-container .buttons-container .buttons .apple_store .logo-text::after {
+          content: "APP STORE";
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: lightgrey;
+          padding-right: 15px; }
+      #main-container .buttons-container .buttons .chrome_store {
+        margin-top: 20px;
+        border-width: 1px;
+        border-color: lightgrey;
+        border-style: solid;
+        cursor: pointer;
+        border-radius: 25px;
+        background-color: white;
+        width: 200px;
+        height: 50px; }
+        #main-container .buttons-container .buttons .chrome_store .logo {
+          float: left;
+          padding-top: 10px;
+          padding-left: 20px; }
+        #main-container .buttons-container .buttons .chrome_store .logo-text {
+          margin: 0;
+          padding-top: 5px;
+          padding-right: 20px;
+          float: right;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          color: lightgrey; }
+        #main-container .buttons-container .buttons .chrome_store .logo-text::after {
+          content: "CHROME";
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: lightgrey;
+          padding-right: 15px; }
+      #main-container .buttons-container .buttons .firefox_store {
+        margin-right: 25px;
+        margin-top: 20px;
+        border-width: 1px;
+        border-color: lightgrey;
+        border-style: solid;
+        cursor: pointer;
+        border-radius: 25px;
+        background-color: white;
+        width: 200px;
+        height: 50px; }
+        #main-container .buttons-container .buttons .firefox_store .logo {
+          float: left;
+          padding-top: 10px;
+          padding-left: 20px; }
+        #main-container .buttons-container .buttons .firefox_store .logo-text {
+          margin: 0;
+          padding-top: 5px;
+          padding-right: 20px;
+          float: right;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          color: lightgrey; }
+        #main-container .buttons-container .buttons .firefox_store .logo-text::after {
+          content: "CHROME";
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: lightgrey;
+          padding-right: 15px; }
 
-.footer-container {
+.helper {
   width: 100%;
-  height: auto;
-  background-color: gray;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-  .footer-container .footer-container_about {
-    width: 300px;
-    height: 150px;
-    background-color: lightblue; }
-  .footer-container .footer-container_popular {
-    width: 300px;
-    height: 150px;
-    background-color: red; }
-  .footer-container .footer-container_labels {
-    width: 300px;
-    height: 150px;
-    background-color: salmon; }
+  height: 400px;
+  background-color: black; }
 
 body {
   padding: 0;
   margin: 0;
   font-size: 100%;
-  background-color: lightblue; }
+  background-color: white;
+  /*width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-position: left;*/ }
