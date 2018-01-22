@@ -1,0 +1,24 @@
+.footer-container {
+  width: 100%;
+  height: auto;
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .footer-container_about {
+    width: 300px;
+    height: 150px;
+    background-color: lightblue;
+  }
+  .footer-container_popular {
+    width: 300px;
+    height: 150px;
+    background-color: red;
+  }
+  .footer-container_labels {
+    width: 300px;
+    height: 150px;
+    background-color: salmon;
+  }
+}
