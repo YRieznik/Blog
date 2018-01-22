@@ -1,24 +1,33 @@
-.footer-container {
+#footer {
   width: 100%;
   height: auto;
-  background-color: gray;
-  color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  .footer-container_about {
-    width: 300px;
-    height: 150px;
-    background-color: lightblue;
+  flex-direction: column;
+  align-items: center;
+  .corp {
+    font-family:'Open Sans', sans-serif;
+    font-size: 14px;
+    color: lightgrey;
   }
-  .footer-container_popular {
-    width: 300px;
-    height: 150px;
-    background-color: red;
+  .terms {
+    .privacy::after {
+      content: "|";
+      font-size: 13px;
+      margin-left: 9px;
+      margin-right: 5px;
+    }
   }
-  .footer-container_labels {
-    width: 300px;
-    height: 150px;
-    background-color: salmon;
+  ul {
+    padding: 0;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        display: block;
+        font-family:'Open Sans', sans-serif;
+        font-size: 13px;
+        color: rgb(11,145,160);
+      }
+    }
   }
 }
