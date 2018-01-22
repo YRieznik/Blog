@@ -1,4 +1,7 @@
 #footer {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   height: auto;
   display: flex;
@@ -27,27 +30,157 @@
 #main-container {
   width: 70%;
   height: auto;
-  position: absolute;
   top: 100px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: nowrap; }
-  #main-container .phones {
-    position: relative; }
-    #main-container .phones img {
-      position: absolute;
-      display: block; }
-    #main-container .phones .black_phone {
-      z-index: 1;
-      padding-top: 50px; }
-    #main-container .phones .white_phone {
-      z-index: 5;
-      padding-left: 300px; }
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+  #main-container .buttons-container {
+    margin-right: 50px;
+    width: 480px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+    #main-container .buttons-container .sale-text {
+      padding-top: 140px; }
+      #main-container .buttons-container .sale-text .corp-name {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        color: #323232;
+        margin: 0; }
+      #main-container .buttons-container .sale-text .corp-text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+        color: #323232; }
+    #main-container .buttons-container .buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #main-container .buttons-container .buttons .google_store {
+        cursor: pointer;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        background-color: black;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        color: white; }
+        #main-container .buttons-container .buttons .google_store .logo {
+          float: left;
+          padding-top: 10px;
+          padding-left: 20px; }
+        #main-container .buttons-container .buttons .google_store .logo-text {
+          margin: 0;
+          padding-top: 5px;
+          padding-right: 20px;
+          float: right;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          color: white; }
+        #main-container .buttons-container .buttons .google_store .logo-text::after {
+          content: "GOOGLE PLAY";
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: white;
+          padding-right: 15px; }
+      #main-container .buttons-container .buttons .apple_store {
+        margin-right: 25px;
+        border-width: 1px;
+        border-color: lightgrey;
+        border-style: solid;
+        cursor: pointer;
+        border-radius: 25px;
+        background-color: white;
+        width: 200px;
+        height: 50px; }
+        #main-container .buttons-container .buttons .apple_store .logo {
+          float: left;
+          padding-top: 8px;
+          padding-left: 20px; }
+        #main-container .buttons-container .buttons .apple_store .logo-text {
+          margin: 0;
+          padding-top: 5px;
+          padding-right: 20px;
+          float: right;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          color: lightgrey; }
+        #main-container .buttons-container .buttons .apple_store .logo-text::after {
+          content: "APP STORE";
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: lightgrey;
+          padding-right: 15px; }
+      #main-container .buttons-container .buttons .chrome_store {
+        margin-top: 20px;
+        border-width: 1px;
+        border-color: lightgrey;
+        border-style: solid;
+        cursor: pointer;
+        border-radius: 25px;
+        background-color: white;
+        width: 200px;
+        height: 50px; }
+        #main-container .buttons-container .buttons .chrome_store .logo {
+          float: left;
+          padding-top: 10px;
+          padding-left: 20px; }
+        #main-container .buttons-container .buttons .chrome_store .logo-text {
+          margin: 0;
+          padding-top: 5px;
+          padding-right: 20px;
+          float: right;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          color: lightgrey; }
+        #main-container .buttons-container .buttons .chrome_store .logo-text::after {
+          content: "CHROME";
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: lightgrey;
+          padding-right: 15px; }
+      #main-container .buttons-container .buttons .firefox_store {
+        margin-right: 25px;
+        margin-top: 20px;
+        border-width: 1px;
+        border-color: lightgrey;
+        border-style: solid;
+        cursor: pointer;
+        border-radius: 25px;
+        background-color: white;
+        width: 200px;
+        height: 50px; }
+        #main-container .buttons-container .buttons .firefox_store .logo {
+          float: left;
+          padding-top: 10px;
+          padding-left: 20px; }
+        #main-container .buttons-container .buttons .firefox_store .logo-text {
+          margin: 0;
+          padding-top: 5px;
+          padding-right: 20px;
+          float: right;
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          color: lightgrey; }
+        #main-container .buttons-container .buttons .firefox_store .logo-text::after {
+          content: "CHROME";
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: lightgrey;
+          padding-right: 15px; }
 
 .helper {
   width: 100%;
